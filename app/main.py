@@ -10,6 +10,7 @@ def root():
 def health():
     return {"status": "healthy"}
 
+
 @app.get("/items/{item_id}")
 def get_item(item_id: int, name: str = "unnamed"):
     return {"item_id": item_id, "name": name}
